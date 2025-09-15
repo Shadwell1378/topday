@@ -2,10 +2,36 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('background_image.png'); 
+    background-image: url('background_image.png'); /* The only relevant comment */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
+/* Styles for the animated overlay */
+.animated-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 120, 150, 0.3);
+    animation: color-shift 15s infinite alternate ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+}
 
+/* Keyframes for the animation */
+@keyframes color-shift {
+    0% {
+        background-color: rgba(75, 120, 150, 0.3);
+    }
+    50% {
+        background-color: rgba(150, 75, 75, 0.3);
+    }
+    100% {
+        background-color: rgba(75, 120, 150, 0.3);
+    }
+}
