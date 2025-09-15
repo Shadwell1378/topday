@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('background_image.png'); /* The only relevant comment */
+    background-image: url('background_image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,6 +23,20 @@ body {
     z-index: 1;
 }
 
+/* Styles for the new word */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Arial Black', sans-serif;
+    font-size: 50vw;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
 /* Keyframes for the animation */
 @keyframes color-shift {
     0% {
@@ -35,4 +49,3 @@ body {
         background-color: rgba(255, 255, 0, 0.7);
     }
 }
-
