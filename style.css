@@ -2,10 +2,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url(background-image.png);
+    background-image: url('background_image.png'); /* Changed from .jpg to .png */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
-
